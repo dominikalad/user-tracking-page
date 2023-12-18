@@ -1,0 +1,8 @@
+{
+  "short_name": "User Tracking App",
+  "name": "USER TRACKING PAGE",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

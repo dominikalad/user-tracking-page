@@ -1,0 +1,25 @@
+.header {
+    background-color: #2f4f4f;
+    color: white;
+    font-size: 4vw; 
+    font-weight: bold;
+    padding: 20px 0;
+    box-sizing: border-box; 
+    width: 100%; 
+    text-align: center; 
+    overflow-wrap: break-word; 
+}
+
+@media (min-width: 1024px) {
+    .header {
+        font-size: 30px; 
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 5vw;
+        padding: 10px 5px; 
+    }
+}

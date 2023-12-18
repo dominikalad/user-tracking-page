@@ -1,0 +1,23 @@
+.report-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.report-table__header {
+    background-color: #3d6657; 
+    color: white; 
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.report-table__item {
+    background-color: #477171; 
+    color: white; 
+    padding: 10px;
+    border-radius: 5px;
+}

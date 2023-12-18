@@ -1,0 +1,7 @@
+.report-page__content {
+    color: palegoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

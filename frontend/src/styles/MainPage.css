@@ -1,0 +1,10 @@
+.main-page__article {
+    width: 60vw;
+    margin: 20px 0;
+}
+
+.main-page__avatar {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
