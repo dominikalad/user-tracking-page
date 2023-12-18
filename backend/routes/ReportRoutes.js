@@ -9,7 +9,8 @@ router.get('/report', async (req, res) => {
         const uniqueUserIds = await PageAccess.distinct('userId');
         const totalUsers = uniqueUserIds.length;
         const usersWhoScrolled = await ScrollEvent.distinct('userId');
-        const percentageScrolled = totalUsers === 0 ? 0 : Math.round((usersWhoScrolled.length / totalUsers) * 100);
+        const filteredUsersWhoScrolled = usersWhoScrolled.filter(userId => uniqueUserIds.includes(userId));
+        const percentageScrolled = totalUsers === 0 ? 0 : Math.round((filteredUsersWhoScrolled.length / totalUsers) * 100);
 
         res.json({
             totalUsers,
